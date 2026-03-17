@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import Image from "next/image";
 
 export default function Home() {
@@ -63,3 +64,24 @@ export default function Home() {
     </div>
   );
 }
+=======
+import HeroSection from "../componentes/HeroSection"
+import Gallery from "../componentes/Gallery"
+import BlogSection from "../componentes/BlogSection"
+import ContactForm from "../componentes/ContactForm"
+
+export default function Home() {
+  return (
+    <main>
+      <HeroSection />
+      <section id="gallery">
+        <Gallery />
+      </section>
+      <BlogSection />
+      <section id="contact">
+        <ContactForm />
+      </section>
+    </main>
+  )
+}
+>>>>>>> Stashed changes
