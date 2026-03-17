@@ -2,6 +2,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
+    <footer className="bg-pink-900 text-pink-200">
+
+      <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="md:col-span-2">
+          <h2 className="text-white text-2xl font-bold mb-3">📷 marIA</h2>
     <footer className="bg-gray-900 text-gray-400">
 
       <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -71,4 +76,5 @@ export default function Footer() {
 
     </footer>
   );
+}
 }
