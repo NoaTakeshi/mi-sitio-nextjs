@@ -4,7 +4,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import type { GalleryImageType } from "@types";
+import type { GalleryImageType } from "@/types";
 
 export default function GalleryImage({ image }: { image: GalleryImageType }) {
     const [isHovered, setIsHovered] = useState(false);
