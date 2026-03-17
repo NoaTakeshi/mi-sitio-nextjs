@@ -7,6 +7,15 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <h2 className="text-white text-2xl font-bold mb-3">📷 marIA</h2>
+    <footer className="bg-gray-900 text-gray-400">
+
+      <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="md:col-span-2">
+          <h2 className="text-white text-2xl font-bold mb-3">📷 GalerIA</h2>
+          <p className="text-sm leading-relaxed max-w-xs">
+            Espacio dedicado al arte visual y la fotografía. Cada imagen cuenta una historia única.
+          </p>
+
           <div className="flex gap-4 mt-6">
             {[
               { label: "Instagram", href: "#", icon: "📸" },
@@ -67,4 +76,5 @@ export default function Footer() {
 
     </footer>
   );
+}
 }
