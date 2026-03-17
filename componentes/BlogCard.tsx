@@ -11,10 +11,10 @@ interface BlogCardProps {
 
 export default function BlogCard({ title, excerpt, date, category, slug, imageUrl }: BlogCardProps) {
   return (
-    <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition group">
-      
-      {/* Imagen */}
-      <div className="h-48 bg-gradient-to-br from-purple-100 to-pink-100 overflow-hidden">
+    <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition group flex flex-row">
+
+      {/* Imagen izquierda */}
+      <div className="w-48 min-h-full bg-gradient-to-br from-purple-100 to-pink-100 overflow-hidden shrink-0">
         {imageUrl ? (
           <img
             src={imageUrl}
@@ -26,10 +26,9 @@ export default function BlogCard({ title, excerpt, date, category, slug, imageUr
         )}
       </div>
 
-      {/* Contenido */}
-      <div className="p-6">
-        {/* Badge categoría */}
-        <span className="inline-block bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+      {/* Texto derecha */}
+      <div className="p-6 flex flex-col justify-center">
+        <span className="inline-block bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mb-3 w-fit">
           {category}
         </span>
 
@@ -43,14 +42,12 @@ export default function BlogCard({ title, excerpt, date, category, slug, imageUr
 
         <div className="flex items-center justify-between text-xs text-gray-400">
           <span>{date}</span>
-          <Link
-            href={`/blog/${slug}`}
-            className="text-purple-600 font-semibold hover:underline"
-          >
+          <Link href={`/blog/${slug}`} className="text-purple-600 font-semibold hover:underline">
             Leer más →
           </Link>
         </div>
       </div>
+
     </article>
   );
 }
